@@ -1,0 +1,30 @@
+
+        <!-- <mat-list>
+            <div *ngIf="userInfo">
+                <p>Name:  {{userInfo.name}}</p>
+                <mat-divider></mat-divider>
+                <p>company:  {{userInfo.company}}</p>
+                <mat-divider></mat-divider>
+                <p>Repos:  <span *ngIf="userRepoInfo && userRepoInfo.length">{{userRepoInfo.length}}</span></p>
+                <mat-divider></mat-divider>
+                <p>Followers:  <span *ngIf="followers && followers.length" (click)="showFollowers()">{{followers.length}}</span></p>
+            </div>
+        </mat-list> -->
+
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{userInfo.name}}</mat-card-title>
+            </mat-card-header>
+                <mat-card-content >
+                    <mat-divider></mat-divider>
+                    <p>Company:     {{userInfo.company}}</p>
+                    <mat-divider></mat-divider>
+                    <p>Repositories:        <span *ngIf="userRepoInfo && userRepoInfo.length">{{userRepoInfo.length}}</span></p>.
+                    <mat-divider></mat-divider>
+                    <p>Followers:       <span *ngIf="followers && followers.length" (click)="showFollowers()">{{followers.length}}</span></p>
+                    <mat-divider></mat-divider>
+                    <p>Email:       {{userInfo.email}}</p>
+                </mat-card-content>
+            
+          </mat-card>
+
