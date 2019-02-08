@@ -19,9 +19,9 @@
                     <mat-divider></mat-divider>
                     <p>Company:     {{userInfo.company}}</p>
                     <mat-divider></mat-divider>
-                    <p>Repositories:        <span *ngIf="userRepoInfo && userRepoInfo.length">{{userRepoInfo.length}}</span></p>.
+                    <p>Repositories:     <span *ngIf="userRepoInfo && userRepoInfo.length">{{userRepoInfo.length}}</span></p>.
                     <mat-divider></mat-divider>
-                    <p>Followers:       <span *ngIf="followers && followers.length" (click)="showFollowers()">{{followers.length}}</span></p>
+                    <p>Followers:     <mark><span *ngIf="followers && followers.length" (click)="showFollowers()">{{followers.length}}</span></mark></p>
                     <mat-divider></mat-divider>
                     <p>Email:       {{userInfo.email}}</p>
                 </mat-card-content>
